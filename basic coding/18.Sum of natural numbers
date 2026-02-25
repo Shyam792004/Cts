@@ -9,11 +9,18 @@ class main
    {
      
        int n=5;
+       
+        //formula method 
+       Console.WriteLine(n*(n+1)/2);
+       
+       //normal method
        int sum=0;
        for(int i=1;i<=n;i++)
        {
            sum+=i;
        }
+       
+      
        Console.WriteLine(sum+" ");
        
    }
