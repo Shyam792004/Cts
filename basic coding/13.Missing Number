@@ -1,0 +1,38 @@
+using System;
+using System.Text;
+class main 
+{
+   
+   static void Main()
+   {
+       int [] arr={1,2,3,5};
+       
+       int n=arr.Length+1;
+       
+       int exp=n*(n+1)/2;
+       int sum=0;
+       foreach(int i in arr)
+       {
+           sum=sum+i;
+       }
+       Console.WriteLine(exp-sum);
+       
+       
+       //0 -based
+       int [] arr2={0,1,2,4,5};
+       
+       int n2=arr2.Length;
+       
+       int exp2=n2*(n2+1)/2;
+       int sum2=0;
+       foreach(int i2 in arr2)
+       {
+           sum2=sum2+i2;
+       }
+       Console.WriteLine(exp2-sum2);
+       
+       
+       
+       
+   }
+}
