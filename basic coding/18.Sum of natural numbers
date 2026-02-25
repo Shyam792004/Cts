@@ -1,0 +1,20 @@
+using System;
+using System.Text;
+using System.Collections.Generic;
+
+class main 
+{
+   
+   static void Main()
+   {
+     
+       int n=5;
+       int sum=0;
+       for(int i=1;i<=n;i++)
+       {
+           sum+=i;
+       }
+       Console.WriteLine(sum+" ");
+       
+   }
+}
