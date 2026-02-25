@@ -1,0 +1,28 @@
+using System;
+using System.Text;
+using System.Collections.Generic;
+
+class main 
+{
+   
+   static void Main()
+   {
+      int a=4;
+      if(a%2==0)
+      {
+          Console.WriteLine("even");
+      }
+      else
+      {
+          Console.WriteLine("odd");
+      }
+       
+       
+       
+       
+       
+       
+       
+       
+   }
+}
