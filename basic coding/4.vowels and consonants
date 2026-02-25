@@ -1,0 +1,27 @@
+using System;
+class main 
+{
+    static void Main()
+    {
+      string str="shyamsundhar";
+      int v=0;
+      int c=0;
+      
+      foreach(char ch in str.ToCharArray())
+      {
+          if(char.IsLetter(ch))
+          {
+              if("aeiou".Contains(ch))
+              {
+                  v++;
+              }
+              else
+              {
+                  c++;
+              }
+          }
+      }
+      Console.WriteLine(v+" "+c);
+        
+    }
+}
