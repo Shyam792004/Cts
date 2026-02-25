@@ -1,0 +1,24 @@
+using System;
+using System.Text;
+using System.Collections.Generic;
+
+class main 
+{
+   
+   static void Main()
+   {
+       int [] arr={1,2,3,4,5,5,6,6,6};
+       
+       int k=6;
+       
+       Console.Write("found at indexes :");
+       for(int i=0;i<arr.Length;i++)
+       {
+           if(k==arr[i])
+           {
+               Console.Write(i+" ");
+           }
+       }
+    
+   }
+}
