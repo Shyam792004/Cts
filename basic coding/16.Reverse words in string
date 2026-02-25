@@ -1,0 +1,42 @@
+using System;
+using System.Text;
+using System.Collections.Generic;
+
+class main 
+{
+   
+   static void Main()
+   {
+      string s="shyam";
+       
+       
+      for(int i=s.Length-1;i>=0;i--)
+      {
+          Console.Write(s[i]+" ") ;
+      }
+       
+       StringBuilder sb=new StringBuilder(s);
+       int l=0;
+       int r=s.Length-1;
+       
+       while(l<r)
+       {
+           char temp=sb[l];
+           sb[l]=sb[r];
+           sb[r]=temp;
+           l++;
+           r--;
+       }
+       
+       Console.WriteLine();
+       Console.Write(string.Join(" ",sb.ToString()));
+       
+       
+       
+       
+       
+       
+       
+       
+   }
+}
