@@ -1,0 +1,56 @@
+using System;
+using System.Text;
+class main 
+{
+    static void reverse(string s)
+    {
+        
+        StringBuilder sb=new StringBuilder(s);
+        
+        int l=0;
+        int r=s.Length-1;
+        while(l<r)
+        {
+            char temp=sb[l];
+            sb[l]=sb[r];
+            sb[r]=temp;
+            l++;
+            r--;
+        }
+        string b=sb.ToString();
+       
+        Console.WriteLine((s==b)?"palindrome":"not palindrome");
+        
+        
+    }
+   static void Main()
+   {
+       string a="mame";
+       
+       int l=0;
+       int r=a.Length-1;
+       bool flag=true;
+       while(l<r)
+       {
+           if(a[l]!=a[r])
+           {
+               flag=false;
+               break;
+           }
+           l++;
+           r--;
+       }
+       if(!flag)
+       {
+           Console.WriteLine("not palindrome");
+       }
+       else
+       {
+           Console.WriteLine("palindrome");
+       }
+       
+       reverse(a);
+       
+       
+   }
+}
