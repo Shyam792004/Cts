@@ -1,0 +1,31 @@
+using System;
+using System.Text;
+using System.Collections.Generic;
+
+class main 
+{
+   
+   static void Main()
+   {
+     
+      int a=153;
+      int b=a;
+
+      
+      string s=a.ToString();
+      int n=s.Length;
+      
+      
+      int sum=0;
+      
+      while(a!=0)
+      {
+          int last_val=a%10;
+          int pow_val=(int)Math.Pow(last_val,n);
+          sum+=pow_val;
+          a=a/10;
+      }
+      Console.Write((sum==b)?"armstrong no":"not armstrong no.");;
+       
+   }
+}
