@@ -1,0 +1,14 @@
+using System;
+using System.Text;
+using System.Collections.Generic;
+
+class main 
+{
+   
+   static void Main()
+   {
+     
+      char a='a';
+      Console.Write((int)a);
+   }
+}
