@@ -1,0 +1,36 @@
+using System;
+using System.Text;
+using System.Collections.Generic;
+
+class main 
+{
+   
+   static void Main()
+   {
+       int [] arr={1,2,3,5,5,6,7,3,3,3};
+       
+       HashSet<int>hs=new HashSet<int>();
+       HashSet<int>duplicates=new HashSet<int>();
+       foreach(int i in arr)
+       {
+           if(!hs.Contains(i))
+           {
+               hs.Add(i);
+           }
+           else
+           {
+               duplicates.Add(i);
+           }
+       }
+       foreach(int i in duplicates)
+       {
+           Console.Write(i+" ");
+       }
+       
+       
+       
+       
+       
+       
+   }
+}
