@@ -1,0 +1,17 @@
+using System;
+class main 
+{
+    static void Main()
+    {
+      int a=123;
+      int n=a;
+      int rev=0;
+      while(n!=0)
+      {
+          rev=rev*10+n%10;
+          n=n/10;
+      }
+      Console.Write(rev);
+        
+    }
+}
